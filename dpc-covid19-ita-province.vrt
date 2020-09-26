@@ -1,0 +1,10 @@
+<OGRVRTDataSource>
+<OGRVRTLayer name="dpc-covid19-ita-province">
+    <SrcDataSource relativeToVRT="0">CSV:/vsicurl_streaming/https://raw.githubusercontent.com/agiudiceandrea/TEST_CSV/master/dpc-covid19-ita-province</SrcDataSource>
+    <GeometryType>wkbPoint</GeometryType>
+    <LayerSRS>WGS84</LayerSRS>
+    <Field name="denominazione_regione" type="String" />
+    <Field name="ricoverati_con_sintomi" type="Integer" />
+    <GeometryField encoding="PointFromColumns" x="long" y="lat"/>
+</OGRVRTLayer>
+</OGRVRTDataSource>
